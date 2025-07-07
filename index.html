@@ -119,11 +119,39 @@
                         <input class="input" type="text" id="name" name="full_name">
                     </div>
                     <div>
-                        <label for="name">Your title:</label>
-                        <select class="input">
+                        <label for="title">Your title:</label>
+                        <select class="input" id="title" name="title">
                             <option value="mr">Mr.</option>
                             <option value="mrs">Mrs.</option>
+                            <option value="mr">Sir</option>
+                            <option value="mrs">Madam</option>
                         </select>
+                    </div>
+                    <div>
+                        <label for="email">Your email:</label>
+                        <input class="input" type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="description">Project description:</label>
+                        <textarea class="input" id="description" name="description" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <label for="budget">Your budget:</label>
+                        <select class="input" id="budget" name="budget">
+                            <option>&lt; 10k EUR</option>
+                            <option>10k-100k EUR</option>
+                            <option>&gt; 100k EUR</option>
+                        </select>
+                    </div>
+                    <div>
+                        <fieldset>
+                            <legend>Required service:</legend>
+                            <label><input type="radio" name="service" value="design"> Design</label>
+                            <label><input type="radio" name="service" value="development"> Development</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="gdpr"> I consent to the terms and conditions</label>
                     </div>
                     <div>
                         <button type="submit">Send request</button>
