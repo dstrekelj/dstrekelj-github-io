@@ -40,6 +40,19 @@
             ul {
                 list-style-type: none;
             }
+            .price-list-hour {
+                background-color: red;
+            }
+            .price-list-day {
+                background-color: black;
+            }
+            .input {
+                width: 100%;
+                border-radius: 0;
+                border: none;
+                background-color: cyan;
+                color: black;
+            }
         </style>
     </head>
     <body>
@@ -77,6 +90,45 @@
                         <div>Search</div>
                     </li>
                 </ul>
+            </section>
+            <section>
+                <h2>Price list</h2>
+                <table>
+                    <tr>
+                        <td></td>
+                        <td>Q1</td>
+                        <td>Q2</td>
+                    </tr>
+                    <tr class="price-list-hour">
+                        <td>Hour</td>
+                        <td>20 E</td>
+                        <td>30 E</td>
+                    </tr>
+                    <tr class="price-list-day">
+                        <td>Day</td>
+                        <td>150 E</td>
+                        <td>240 E</td>
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h2>Request a quote for your project</h2>
+                <form>
+                    <div>
+                        <label for="name">Your first and last name:</label>
+                        <input class="input" type="text" id="name" name="full_name">
+                    </div>
+                    <div>
+                        <label for="name">Your title:</label>
+                        <select class="input">
+                            <option value="mr">Mr.</option>
+                            <option value="mrs">Mrs.</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button type="submit">Send request</button>
+                    </div>
+                </form>
             </section>
         </main>
         <footer class="wrapper">
